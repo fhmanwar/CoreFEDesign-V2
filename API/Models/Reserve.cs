@@ -19,5 +19,6 @@ namespace API.Models
         public DateTime tgl_bayar { get; set; }
         public Car car { get; set; }
         public Konsumen konsumen { get; set; }
+        public Account account { get; set; }
     }
 }

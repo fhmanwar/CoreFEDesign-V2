@@ -15,6 +15,8 @@ namespace API.Models
         public string nm_car { get; set; }
         public string transmition { get; set; }
         public int year { get; set; }
+        public int price { get; set; }
         public Merk merk { get; set; }
+        public Account account { get; set; }
     }
 }

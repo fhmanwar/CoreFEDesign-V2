@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MII\\MCCOC\\#7-Templating\\tugas\\CoreFEDesign\\API\\API.csproj": {}
+    "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\MII\\MCCOC\\#7-Templating\\tugas\\CoreFEDesign\\API\\API.csproj": {
+    "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MII\\MCCOC\\#7-Templating\\tugas\\CoreFEDesign\\API\\API.csproj",
+        "projectUniqueName": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\MII\\MCCOC\\#7-Templating\\tugas\\CoreFEDesign\\API\\API.csproj",
+        "projectPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Kiboy\\.nuget\\packages\\",
-        "outputPath": "D:\\MII\\MCCOC\\#7-Templating\\tugas\\CoreFEDesign\\API\\obj\\",
+        "outputPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,6 +56,16 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.14, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

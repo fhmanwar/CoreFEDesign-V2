@@ -18,9 +18,9 @@ namespace API.ViewModels
         public String carTransmition { get; set; }
         public String carYear { get; set; }
         public String carMerk { get; set; }
-        public int konsumenID { get; set; }
-        public String konsumenName { get; set; }
-        public String konsumenAlamat { get; set; }
-        public String konsumenPhone { get; set; }
+        public int accountID { get; set; }
+        public String accountName { get; set; }
+        public String accountAlamat { get; set; }
+        public String accountPhone { get; set; }
     }
 }

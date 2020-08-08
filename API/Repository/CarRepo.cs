@@ -23,7 +23,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPInsertCar";
+                var procName = "CarSPInsert";
                 parameters.Add("Name", carVM.nm_car);
                 parameters.Add("transmition", carVM.transmition);
                 parameters.Add("year", carVM.year);
@@ -38,7 +38,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPDeleteCar";
+                var procName = "CarSPDelete";
                 parameters.Add("id", id);
                 var Delete = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Delete;
@@ -49,7 +49,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetAllCar";
+                var procName = "CarSPGetAll";
                 var getAll = await connection.QueryAsync<CarVM>(procName, commandType: CommandType.StoredProcedure);
                 return getAll;
             }
@@ -59,7 +59,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetIDCar";
+                var procName = "CarSPGetID";
                 parameters.Add("id", id);
                 var getId = connection.Query<CarVM>(procName, parameters, commandType: CommandType.StoredProcedure).SingleOrDefault();
                 return getId;
@@ -70,7 +70,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPEditCar";
+                var procName = "CarSPEdit";
                 parameters.Add("id", id);
                 parameters.Add("name", carVM.nm_car);
                 parameters.Add("transmition", carVM.transmition);

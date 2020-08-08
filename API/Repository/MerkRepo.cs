@@ -23,7 +23,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPInsertMerk";
+                var procName = "MerkSPInsert";
                 parameters.Add("merk", merkVM.Merk);
                 var insert = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return insert;
@@ -34,7 +34,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPDeleteMerk";
+                var procName = "MerkSPDelete";
                 parameters.Add("id", id);
                 var Delete = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Delete;
@@ -45,7 +45,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetAllMerk";
+                var procName = "MerkSPGetAll";
                 var getAll = await connection.QueryAsync<MerkVM>(procName, commandType: CommandType.StoredProcedure);
                 return getAll;
             }
@@ -55,7 +55,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetIDMerk";
+                var procName = "MerkSPGetID";
                 parameters.Add("id", id);
                 var getId = connection.Query<MerkVM>(procName, parameters, commandType: CommandType.StoredProcedure).SingleOrDefault();
                 return getId;
@@ -66,7 +66,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPEditMerk";
+                var procName = "MerkSPEdit";
                 parameters.Add("id", id);
                 parameters.Add("merk", merkVM.Merk);
                 var Edit = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);

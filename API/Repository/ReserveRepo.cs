@@ -23,14 +23,14 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPInsertReserve";
+                var procName = "ReserveSPInsert";
                 parameters.Add("start", reserveVM.start_date);
                 parameters.Add("end", reserveVM.end_date);
                 parameters.Add("status", reserveVM.status);
                 parameters.Add("tot", reserveVM.total);
                 parameters.Add("tgl_bayar", reserveVM.tgl_bayar);
                 parameters.Add("carID", reserveVM.carID);
-                parameters.Add("konsumenID", reserveVM.konsumenID);
+                parameters.Add("konsumenID", reserveVM.accountID);
                 var insert = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return insert;
             }
@@ -40,7 +40,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPDeleteReserve";
+                var procName = "ReserveSPDelete";
                 parameters.Add("id", id);
                 var Delete = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Delete;
@@ -51,7 +51,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetAllReserve";
+                var procName = "ReserveSPGetAll";
                 var getAll = await connection.QueryAsync<ReserveVM>(procName, commandType: CommandType.StoredProcedure);
                 return getAll;
             }
@@ -61,7 +61,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPGetIDReserve";
+                var procName = "ReserveSPGetID";
                 parameters.Add("id", id);
                 var getId = connection.Query<ReserveVM>(procName, parameters, commandType: CommandType.StoredProcedure).SingleOrDefault();
                 return getId;
@@ -72,7 +72,7 @@ namespace API.Repository
         {
             using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPEditReserve";
+                var procName = "ReserveSPEdit";
                 parameters.Add("id", id);
                 parameters.Add("start", reserveVM.start_date);
                 parameters.Add("end", reserveVM.end_date);
@@ -80,7 +80,7 @@ namespace API.Repository
                 parameters.Add("tot", reserveVM.total);
                 parameters.Add("tgl_bayar", reserveVM.tgl_bayar);
                 parameters.Add("carID", reserveVM.carID);
-                parameters.Add("konsumenID", reserveVM.konsumenID);
+                parameters.Add("konsumenID", reserveVM.accountID);
                 var Edit = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Edit;
             }
