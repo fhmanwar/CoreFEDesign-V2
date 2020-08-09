@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace API.Repository
 {
@@ -21,7 +22,7 @@ namespace API.Repository
         }
         public int Create(CarVM carVM)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "CarSPInsert";
                 parameters.Add("Name", carVM.nm_car);
@@ -36,7 +37,7 @@ namespace API.Repository
 
         public int Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "CarSPDelete";
                 parameters.Add("id", id);
@@ -47,7 +48,7 @@ namespace API.Repository
 
         public async Task<IEnumerable<CarVM>> getAll()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "CarSPGetAll";
                 var getAll = await connection.QueryAsync<CarVM>(procName, commandType: CommandType.StoredProcedure);
@@ -57,7 +58,7 @@ namespace API.Repository
 
         public CarVM getID(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "CarSPGetID";
                 parameters.Add("id", id);
@@ -68,7 +69,7 @@ namespace API.Repository
 
         public int Update(CarVM carVM, int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "CarSPEdit";
                 parameters.Add("id", id);

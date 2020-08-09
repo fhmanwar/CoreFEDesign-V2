@@ -1,6 +1,7 @@
 ﻿using API.ViewModels;
 using Dapper;
 using Microsoft.Extensions.Configuration;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -20,9 +21,9 @@ namespace API.Repository
         }
         public async Task<IEnumerable<PieChartVM>> getPie()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPPieChart";
+                var procName = "ChartSPPie";
                 var getAll = await connection.QueryAsync<PieChartVM>(procName, commandType: CommandType.StoredProcedure);
                 return getAll;
             }
@@ -30,9 +31,9 @@ namespace API.Repository
 
         public async Task<IEnumerable<LineChartVM>> getLine()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var procName = "SPLineChart";
+                var procName = "ChartSPLine";
                 var getAll = await connection.QueryAsync<LineChartVM>(procName, commandType: CommandType.StoredProcedure);
                 return getAll;
             }

@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace API.Repository
 {
@@ -21,7 +22,8 @@ namespace API.Repository
         }
         public int Create(KonsumenVM konsumenVM)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            //using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "SPInsertKonsumen";
                 parameters.Add("nama", konsumenVM.nama);
@@ -34,7 +36,8 @@ namespace API.Repository
 
         public int Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            //using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "SPDeleteKonsumen";
                 parameters.Add("id", id);
@@ -45,7 +48,8 @@ namespace API.Repository
 
         public async Task<IEnumerable<KonsumenVM>> getAll()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            //using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "SPGetAllKonsumen";
                 var getAll = await connection.QueryAsync<KonsumenVM>(procName, commandType: CommandType.StoredProcedure);
@@ -55,7 +59,8 @@ namespace API.Repository
 
         public KonsumenVM getID(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            //using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "SPGetIDKonsumen";
                 parameters.Add("id", id);
@@ -66,7 +71,8 @@ namespace API.Repository
 
         public int Update(KonsumenVM konsumenVM, int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            //using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "SPEditKonsumen";
                 parameters.Add("id", id);

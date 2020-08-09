@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace API.Repository
 {
@@ -21,7 +22,7 @@ namespace API.Repository
         }
         public int Create(ReserveVM reserveVM)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "ReserveSPInsert";
                 parameters.Add("start", reserveVM.start_date);
@@ -38,7 +39,7 @@ namespace API.Repository
 
         public int Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "ReserveSPDelete";
                 parameters.Add("id", id);
@@ -49,7 +50,7 @@ namespace API.Repository
 
         public async Task<IEnumerable<ReserveVM>> getAll()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "ReserveSPGetAll";
                 var getAll = await connection.QueryAsync<ReserveVM>(procName, commandType: CommandType.StoredProcedure);
@@ -59,7 +60,7 @@ namespace API.Repository
 
         public ReserveVM getID(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "ReserveSPGetID";
                 parameters.Add("id", id);
@@ -70,7 +71,7 @@ namespace API.Repository
 
         public int Update(ReserveVM reserveVM, int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "ReserveSPEdit";
                 parameters.Add("id", id);

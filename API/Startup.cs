@@ -30,7 +30,8 @@ namespace API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("myConn")));
+            //services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("myConn")));
+            services.AddDbContext<MyContext>(options => options.UseMySQL(Configuration.GetConnectionString("myConn")));
             services.AddScoped<IMerk, MerkRepo>();
             services.AddScoped<IKonsumen, KonsumenRepo>();
             services.AddScoped<ICar, CarRepo>();

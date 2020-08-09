@@ -8,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
 
 namespace API.Repository
 {
@@ -21,7 +22,7 @@ namespace API.Repository
         }
         public int Create(MerkVM merkVM)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "MerkSPInsert";
                 parameters.Add("merk", merkVM.Merk);
@@ -32,7 +33,7 @@ namespace API.Repository
 
         public int Delete(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "MerkSPDelete";
                 parameters.Add("id", id);
@@ -43,7 +44,7 @@ namespace API.Repository
 
         public async Task<IEnumerable<MerkVM>> getAll()
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "MerkSPGetAll";
                 var getAll = await connection.QueryAsync<MerkVM>(procName, commandType: CommandType.StoredProcedure);
@@ -53,7 +54,7 @@ namespace API.Repository
 
         public MerkVM getID(int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "MerkSPGetID";
                 parameters.Add("id", id);
@@ -64,7 +65,7 @@ namespace API.Repository
 
         public int Update(MerkVM merkVM, int id)
         {
-            using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("myConn")))
+            using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "MerkSPEdit";
                 parameters.Add("id", id);
