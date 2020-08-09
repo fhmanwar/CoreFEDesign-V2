@@ -13,9 +13,19 @@ namespace Client.Controllers
         {
             BaseAddress = new Uri("https://localhost:44339/api/")
         };
-        public IActionResult Index()
+        public IActionResult Login()
         {
             return View();
+        }
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+        public ActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login", "Auth");
         }
     }
 }

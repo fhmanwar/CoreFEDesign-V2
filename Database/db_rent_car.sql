@@ -286,7 +286,7 @@ CREATE TABLE IF NOT EXISTS `tbl_account` (
   `username` varchar(50) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `access_level` varchar(15) DEFAULT NULL,
+  `access_level` enum('Admin','User') DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id_account`)
@@ -299,9 +299,10 @@ CREATE TABLE IF NOT EXISTS `tbl_account` (
 -- Dumping structure for table db_rent_car.tbl_car
 CREATE TABLE IF NOT EXISTS `tbl_car` (
   `id_car` int(11) NOT NULL AUTO_INCREMENT,
-  `nm_car` int(11) DEFAULT NULL,
+  `nm_car` varchar(100) DEFAULT NULL,
   `transmition` varchar(50) DEFAULT NULL,
   `year` year(4) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
   `merk_id` int(11) DEFAULT NULL,
   `account_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_car`),
@@ -310,10 +311,18 @@ CREATE TABLE IF NOT EXISTS `tbl_car` (
   KEY `FK_Account` (`account_id`),
   CONSTRAINT `FK_tbl_car_tbl_account` FOREIGN KEY (`account_id`) REFERENCES `tbl_account` (`id_account`),
   CONSTRAINT `FK_tbl_car_tbl_merk` FOREIGN KEY (`merk_id`) REFERENCES `tbl_merk` (`id_merk`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table db_rent_car.tbl_car: ~0 rows (approximately)
 /*!40000 ALTER TABLE `tbl_car` DISABLE KEYS */;
+INSERT INTO `tbl_car` (`id_car`, `nm_car`, `transmition`, `year`, `price`, `merk_id`, `account_id`) VALUES
+	(1, 'Ayla', 'Automatic', '2019', 200000, 1, NULL),
+	(3, 'BRV', 'Automatic', '2018', 300000, 2, NULL),
+	(4, 'CR-V', 'Automatic', '2020', 500000, 2, NULL),
+	(5, 'E46', 'Automatic', '2002', 600000, 5, NULL),
+	(6, 'Golf GTI', 'Automatic', '2020', 1000000, 6, NULL),
+	(7, 'Scirocco', 'Automatic', '2020', 900000, 6, NULL),
+	(8, 'E90', 'Automatic', '2005', 950000, 5, NULL);
 /*!40000 ALTER TABLE `tbl_car` ENABLE KEYS */;
 
 -- Dumping structure for table db_rent_car.tbl_merk
@@ -321,13 +330,16 @@ CREATE TABLE IF NOT EXISTS `tbl_merk` (
   `id_merk` int(11) NOT NULL AUTO_INCREMENT,
   `merk` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_merk`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_rent_car.tbl_merk: ~2 rows (approximately)
+-- Dumping data for table db_rent_car.tbl_merk: ~5 rows (approximately)
 /*!40000 ALTER TABLE `tbl_merk` DISABLE KEYS */;
 INSERT INTO `tbl_merk` (`id_merk`, `merk`) VALUES
 	(1, 'Toyota'),
-	(2, 'Honda');
+	(2, 'Honda'),
+	(4, 'Suzuki'),
+	(5, 'BMW'),
+	(6, 'Volkswagen');
 /*!40000 ALTER TABLE `tbl_merk` ENABLE KEYS */;
 
 -- Dumping structure for table db_rent_car.tbl_reserve

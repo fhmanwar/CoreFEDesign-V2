@@ -34,4 +34,3 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.genrun
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csprojAssemblyReference.cache

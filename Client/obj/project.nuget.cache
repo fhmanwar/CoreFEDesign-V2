@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AUocvyLbRocARUoSkLIeR8DBgBeo+O8ubuJ83cxusIpEVq+g7k+FNoCBAwMycjk48iECagvik8d3I/MYrXQ7kg==",
+  "dgSpecHash": "TKq9bt784SLC57maq5bvlKZ8ASIlbc7QeXnxdRWZ8poJy6uaKxcK+mzP95vlQsES07tmOSYAXcVRadkTHUacGg==",
   "success": true,
   "projectFilePath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kiboy\\.nuget\\packages\\bcrypt.net-next\\4.0.0\\bcrypt.net-next.4.0.0.nupkg.sha512",
     "C:\\Users\\Kiboy\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Kiboy\\.nuget\\packages\\dapper\\2.0.35\\dapper.2.0.35.nupkg.sha512",
     "C:\\Users\\Kiboy\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
@@ -254,7 +255,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.parallel\\4.3.0\\system.linq.parallel.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.queryable\\4.0.1\\system.linq.queryable.4.0.1.nupkg.sha512",
-    "C:\\Users\\Kiboy\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Kiboy\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.net.http\\4.3.0\\system.net.http.4.3.0.nupkg.sha512",
     "C:\\Users\\Kiboy\\.nuget\\packages\\system.net.nameresolution\\4.0.0\\system.net.nameresolution.4.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.net.primitives\\4.3.0\\system.net.primitives.4.3.0.nupkg.sha512",
