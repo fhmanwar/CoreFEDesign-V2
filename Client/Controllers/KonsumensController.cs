@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using OfficeOpenXml;
 
 namespace Client.Controllers
 {
@@ -20,6 +21,63 @@ namespace Client.Controllers
         {
             return View();
         }
+        public IActionResult Excel()
+        {
+
+            IEnumerable<Konsumen> konsumen = null;
+            var responseTask = client.GetAsync("Konsumens");
+            responseTask.Wait();
+            var rst = responseTask.Result;
+            if (rst.IsSuccessStatusCode)
+            {
+                var readTask = rst.Content.ReadAsAsync<IList<Konsumen>>();
+                readTask.Wait();
+                konsumen = readTask.Result;
+
+            }
+
+            var comlumHeadrs = new string[]
+            {
+                "id_konsumen",
+                "nama",
+                "alamat",
+                "tlp"
+            };
+
+            byte[] result;
+
+            using (var package = new ExcelPackage())
+            {
+                // add a new worksheet to the empty workbook
+
+                var worksheet = package.Workbook.Worksheets.Add("Current Konsumen"); //Worksheet name
+                using (var cells = worksheet.Cells[1, 1, 1, 7]) //(1,1) (1,5)
+                {
+                    cells.Style.Font.Bold = true;
+                }
+
+                //First add the headers
+                for (var i = 0; i < comlumHeadrs.Count(); i++)
+                {
+                    worksheet.Cells[1, i + 1].Value = comlumHeadrs[i];
+                }
+
+                //Add values
+                var j = 2;
+                foreach (var data in konsumen)
+                {
+                    worksheet.Cells["A" + j].Value = data.id_konsumen;
+                    worksheet.Cells["B" + j].Value = data.nama;
+                    worksheet.Cells["C" + j].Value = data.alamat;
+                    worksheet.Cells["D" + j].Value = data.tlp;
+                    j++;
+                }
+                result = package.GetAsByteArray();
+            }
+
+            return File(result, "application/ms-excel", $"Konsumen.xlsx");
+        }
+
         public JsonResult LoadKonsumen()
         {
             IEnumerable<Konsumen> konsumens = null;

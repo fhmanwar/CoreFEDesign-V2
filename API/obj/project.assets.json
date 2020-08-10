@@ -12703,23 +12703,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kiboy\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
+      "projectUniqueName": "E:\\Work\\Github\\Tugas_Akhir_MCC\\CoreFEDesign-V2\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\Kiboy\\.nuget\\packages\\",
-      "outputPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\obj\\",
+      "projectPath": "E:\\Work\\Github\\Tugas_Akhir_MCC\\CoreFEDesign-V2\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "E:\\Work\\Github\\Tugas_Akhir_MCC\\CoreFEDesign-V2\\API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kiboy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12727,8 +12723,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/nuget": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

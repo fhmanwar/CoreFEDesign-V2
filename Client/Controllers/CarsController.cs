@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using OfficeOpenXml;
 
 namespace Client.Controllers
 {
@@ -20,6 +21,68 @@ namespace Client.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+        public IActionResult Excel()
+        {
+
+            IEnumerable<CarVM> car = null;
+            var responseTask = client.GetAsync("Cars");
+            responseTask.Wait();
+            var rst = responseTask.Result;
+            if (rst.IsSuccessStatusCode)
+            {
+                var readTask = rst.Content.ReadAsAsync<IList<CarVM>>();
+                readTask.Wait();
+                car = readTask.Result;
+
+            }
+
+            var comlumHeadrs = new string[]
+            {
+                "id_car",
+                "nm_car",
+                "transmition",
+                "year",
+                "price",
+                "merkid",
+                "merkname"
+            };
+
+            byte[] result;
+
+            using (var package = new ExcelPackage())
+            {
+                // add a new worksheet to the empty workbook
+
+                var worksheet = package.Workbook.Worksheets.Add("Current Car"); //Worksheet name
+                using (var cells = worksheet.Cells[1, 1, 1, 7]) //(1,1) (1,5)
+                {
+                    cells.Style.Font.Bold = true;
+                }
+
+                //First add the headers
+                for (var i = 0; i < comlumHeadrs.Count(); i++)
+                {
+                    worksheet.Cells[1, i + 1].Value = comlumHeadrs[i];
+                }
+
+                //Add values
+                var j = 2;
+                foreach (var data in car)
+                {
+                    worksheet.Cells["A" + j].Value = data.id_car;
+                    worksheet.Cells["B" + j].Value = data.nm_car;
+                    worksheet.Cells["C" + j].Value = data.transmition;
+                    worksheet.Cells["D" + j].Value = data.year;
+                    worksheet.Cells["E" + j].Value = data.price;
+                    worksheet.Cells["F" + j].Value = data.merkID;
+                    worksheet.Cells["G" + j].Value = data.merkName;
+                    j++;
+                }
+                result = package.GetAsByteArray();
+            }
+
+            return File(result, "application/ms-excel", $"Car.xlsx");
         }
 
         public JsonResult LoadCar()

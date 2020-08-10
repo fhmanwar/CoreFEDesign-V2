@@ -8,6 +8,7 @@ using API.Models;
 using API.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using OfficeOpenXml;
 
 namespace Client.Controllers
 {
@@ -21,6 +22,63 @@ namespace Client.Controllers
         {
             return View();
         }
+
+        public IActionResult Excel()
+        {
+
+            IEnumerable<Merk> merk = null;
+            var responseTask = client.GetAsync("Merks");
+            responseTask.Wait();
+            var rst = responseTask.Result;
+            if (rst.IsSuccessStatusCode)
+            {
+                var readTask = rst.Content.ReadAsAsync<IList<Merk>>();
+                readTask.Wait();
+                merk = readTask.Result;
+
+            }
+
+            var comlumHeadrs = new string[]
+            {
+                "id_merk",
+                "merk"
+            };
+
+            byte[] result;
+
+            using (var package = new ExcelPackage())
+            {
+                // add a new worksheet to the empty workbook
+
+                var worksheet = package.Workbook.Worksheets.Add("Current Merk"); //Worksheet name
+                using (var cells = worksheet.Cells[1, 1, 1, 2]) //(1,1) (1,5)
+                {
+                    cells.Style.Font.Bold = true;
+                }
+
+                //First add the headers
+                for (var i = 0; i < comlumHeadrs.Count(); i++)
+                {
+                    worksheet.Cells[1, i + 1].Value = comlumHeadrs[i];
+                }
+
+                //Add values
+                var j = 2;
+                foreach (var data in merk)
+                {
+                    worksheet.Cells["A" + j].Value = data.id_merk;
+                    worksheet.Cells["B" + j].Value = data.merk;
+                    j++;
+                }
+                result = package.GetAsByteArray();
+            }
+
+            return File(result, "application/ms-excel", $"Merk.xlsx");
+        }
+
+
+
+
 
         public JsonResult LoadMerk()
         {
