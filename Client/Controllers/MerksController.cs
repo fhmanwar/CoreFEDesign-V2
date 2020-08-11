@@ -15,7 +15,8 @@ namespace Client.Controllers
     {
         readonly HttpClient client = new HttpClient
         {
-            BaseAddress = new Uri("https://localhost:44339/api/")
+            //BaseAddress = new Uri("https://localhost:44339/api/")
+            BaseAddress = new Uri("https://localhost:5000/api/")
         };
         public IActionResult Index()
         {
