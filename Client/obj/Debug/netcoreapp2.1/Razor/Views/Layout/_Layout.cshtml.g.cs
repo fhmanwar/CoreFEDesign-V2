@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "1c058ec5b4b29dce020f97ce5b91bda682f18ab1"
+=======
+#pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "da3ee3f9df0ae7ae18958ff983d348fe079e5a4c"
+>>>>>>> parent of afc0656... update login
 =======
 #pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "da3ee3f9df0ae7ae18958ff983d348fe079e5a4c"
 >>>>>>> parent of afc0656... update login
@@ -28,12 +32,16 @@ using Client.Models;
 #line default
 #line hidden
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 1 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
 using Microsoft.AspNetCore.Http;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c058ec5b4b29dce020f97ce5b91bda682f18ab1", @"/Views/Layout/_Layout.cshtml")]
+=======
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"da3ee3f9df0ae7ae18958ff983d348fe079e5a4c", @"/Views/Layout/_Layout.cshtml")]
+>>>>>>> parent of afc0656... update login
 =======
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"da3ee3f9df0ae7ae18958ff983d348fe079e5a4c", @"/Views/Layout/_Layout.cshtml")]
 >>>>>>> parent of afc0656... update login
@@ -102,9 +110,15 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
             BeginContext(321, 950, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c605deb30b4d4d85893b684c492c3717", async() => {
                 BeginContext(327, 74, true);
+=======
+            BeginContext(35, 950, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d5de81de339462cb430cb290587b3ac", async() => {
+                BeginContext(41, 74, true);
+>>>>>>> parent of afc0656... update login
 =======
             BeginContext(35, 950, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0d5de81de339462cb430cb290587b3ac", async() => {
@@ -123,8 +137,13 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral(" || Car Rent</title>\r\n    <meta content=\'width=device-width, initial-scale=1.0, shrink-to-fit=no\' name=\'viewport\' />\r\n    ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(541, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8828eece832942c8ad49d1a4c43bca1c", async() => {
+=======
+                BeginContext(255, 57, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "838b0270dbc644a391cc130a21bbcb37", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(255, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "838b0270dbc644a391cc130a21bbcb37", async() => {
@@ -148,8 +167,13 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("\r\n\r\n    <!-- Fonts and icons -->\r\n    ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(636, 43, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc0b23985fb74ed2878f75e67175701f", async() => {
+=======
+                BeginContext(350, 43, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5ba45445c8c41c28d18e45d9f044152", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(350, 43, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5ba45445c8c41c28d18e45d9f044152", async() => {
@@ -183,8 +207,13 @@ using Microsoft.AspNetCore.Http;
     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(1093, 56, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9a850c0ff1eb4e51a8f7c1fcb2d80486", async() => {
+=======
+                BeginContext(807, 56, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c2d74dd916ee41e0b6245eb3560d5fa1", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(807, 56, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c2d74dd916ee41e0b6245eb3560d5fa1", async() => {
@@ -207,8 +236,13 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("\r\n    ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(1155, 53, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6c4a9058c02a4eada1c96dd3587b2e83", async() => {
+=======
+                BeginContext(869, 53, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8b645051bc184564b2361b600bf71a01", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(869, 53, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8b645051bc184564b2361b600bf71a01", async() => {
@@ -231,8 +265,13 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("\r\n    ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(1214, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "50c6976a015a45b6b609d502e07b9484", async() => {
+=======
+                BeginContext(928, 48, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "258c8b3173fb4946ae5c510bd5d1c2a2", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(928, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "258c8b3173fb4946ae5c510bd5d1c2a2", async() => {
@@ -270,9 +309,15 @@ using Microsoft.AspNetCore.Http;
             WriteLiteral("\r\n");
             EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
             BeginContext(1273, 23285, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "845461abf261433d874d7315bef809fc", async() => {
                 BeginContext(1279, 228, true);
+=======
+            BeginContext(987, 20485, false);
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d608a12082e48e589b7fd5ba63e3d38", async() => {
+                BeginContext(993, 228, true);
+>>>>>>> parent of afc0656... update login
 =======
             BeginContext(987, 20485, false);
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d608a12082e48e589b7fd5ba63e3d38", async() => {
@@ -304,9 +349,15 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("nav\">\r\n                        ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(2663, 604, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b7b76fc4bb9f4559a875e500c3a3a55c", async() => {
                     BeginContext(2720, 540, true);
+=======
+                BeginContext(2377, 604, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab56b6a269e645f4ba4e971882b4625c", async() => {
+                    BeginContext(2434, 540, true);
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(2377, 604, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab56b6a269e645f4ba4e971882b4625c", async() => {
@@ -367,8 +418,13 @@ using Microsoft.AspNetCore.Http;
                                                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(4963, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "42082035448240429cb661f6dc68700d", async() => {
+=======
+                BeginContext(4677, 51, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "98e89dacce9842868836525022f8c008", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(4677, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "98e89dacce9842868836525022f8c008", async() => {
@@ -403,8 +459,13 @@ using Microsoft.AspNetCore.Http;
                                                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(5831, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c089869eddc24b9d9f838358045de835", async() => {
+=======
+                BeginContext(5545, 51, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a11c1e74a7914042a8c882e418c843c2", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(5545, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a11c1e74a7914042a8c882e418c843c2", async() => {
@@ -439,8 +500,13 @@ using Microsoft.AspNetCore.Http;
                                                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(6692, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c8d21aa588c3489e9ce833c39722c124", async() => {
+=======
+                BeginContext(6406, 51, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0cc2a538f09e4dc6a27b9870b1e59db7", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(6406, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0cc2a538f09e4dc6a27b9870b1e59db7", async() => {
@@ -475,8 +541,13 @@ using Microsoft.AspNetCore.Http;
                                                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(7575, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b66f71adc18b4c6c9db474e1da48dfa4", async() => {
+=======
+                BeginContext(7289, 51, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "09538c644244435185e01c10f1885c3a", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(7289, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "09538c644244435185e01c10f1885c3a", async() => {
@@ -547,8 +618,13 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral("\r\n                                        </a>\r\n                                        <a href=\"#\">\r\n                                            <div class=\"notif-img\">\r\n                                                ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(10917, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "fe2fc243a8b3430c8f485dcaeb0eb43d", async() => {
+=======
+                BeginContext(10631, 51, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4811414e6de642f89752868ae91f41f1", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(10631, 51, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4811414e6de642f89752868ae91f41f1", async() => {
@@ -600,8 +676,13 @@ using Microsoft.AspNetCore.Http;
                                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(12775, 76, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9c334f1121e64afd8ba311690e7ce211", async() => {
+=======
+                BeginContext(12489, 76, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "437a732d7e70469a9280bc5d899d7f69", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(12489, 76, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "437a732d7e70469a9280bc5d899d7f69", async() => {
@@ -631,8 +712,13 @@ using Microsoft.AspNetCore.Http;
                                         <div class=""avatar-lg"">");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(13174, 79, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b3f5ed1e80234a0dab0650bd4041a27d", async() => {
+=======
+                BeginContext(12888, 79, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "74331e5955264d1481ca97543d741f37", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(12888, 79, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "74331e5955264d1481ca97543d741f37", async() => {
@@ -690,8 +776,13 @@ using Microsoft.AspNetCore.Http;
                             ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(14728, 76, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "c6dfa19397cc4e268cadd3779acdf43f", async() => {
+=======
+                BeginContext(14663, 76, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a982a2d6bfeb4c4dab5e944e1b45c197", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(14663, 76, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a982a2d6bfeb4c4dab5e944e1b45c197", async() => {
@@ -711,6 +802,7 @@ using Microsoft.AspNetCore.Http;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
+<<<<<<< HEAD
 <<<<<<< HEAD
                 BeginContext(14804, 255, true);
                 WriteLiteral("\r\n                        </div>\r\n                        <div class=\"info\">\r\n                            <a data-toggle=\"collapse\" href=\"#collapseExample\" aria-expanded=\"true\">\r\n                                <span>\r\n                                    ");
@@ -735,6 +827,8 @@ using Microsoft.AspNetCore.Http;
                 BeginContext(15133, 4553, true);
                 WriteLiteral(@"</span>
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(14739, 5403, true);
                 WriteLiteral(@"
                         </div>
@@ -743,6 +837,9 @@ using Microsoft.AspNetCore.Http;
                                 <span>
                                     Hizrian
                                     <span class=""user-level"">Administrator</span>
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                                     <span class=""caret""></span>
                                 </span>
@@ -788,7 +885,10 @@ using Microsoft.AspNetCore.Http;
                         </li>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of afc0656... update login
 =======
 >>>>>>> parent of afc0656... update login
                         <li class=""nav-item"">
@@ -801,17 +901,23 @@ using Microsoft.AspNetCore.Http;
                                 <ul class=""nav nav-collapse"">
                                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                  ");
                 WriteLiteral(@"                       <a href=""/merks"">
                                             <span class=""sub-item"">Data Merk</span>
                                         </a>
                                     </li>
 =======
+=======
+>>>>>>> parent of afc0656... update login
                                         <a href=""/merks"">
                                             <span class=""sub-item"">Data Merk</span>
                                         </a>
                                 ");
                 WriteLiteral(@"    </li>
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                                     <li>
                                         <a href=""/cars"">
@@ -829,17 +935,23 @@ using Microsoft.AspNetCore.Http;
                             </a>
                             <div class=""collapse"" id=""reserve"">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 ");
                 WriteLiteral(@"<ul class=""nav nav-collapse"">
                                     <li>
                                         <a href=""/reserves"">
                                             <span class=""sub-item"">Reserve</span>
 =======
+=======
+>>>>>>> parent of afc0656... update login
                                 <ul class=""nav nav-collapse"">
                                     <li>
                                         <a href=""/reserves"">
                                             <span class=""sub-item"">Res");
                 WriteLiteral(@"erve</span>
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                                         </a>
                                     </li>
@@ -850,7 +962,11 @@ using Microsoft.AspNetCore.Http;
                             <a data-toggle=""collapse"" href=""#users"">
                                 <i class=""fas fa-fw fa-users-cog""></i>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <p>Account</p>
+=======
+                                <p>Konsumen</p>
+>>>>>>> parent of afc0656... update login
 =======
                                 <p>Konsumen</p>
 >>>>>>> parent of afc0656... update login
@@ -860,6 +976,7 @@ using Microsoft.AspNetCore.Http;
                                 <ul class=""nav nav-collapse"">
                                     <li>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <a href=""/accounts"">
                                             <span");
                 WriteLiteral(@" class=""sub-item"">All Account</span>
@@ -868,10 +985,13 @@ using Microsoft.AspNetCore.Http;
                                     <li>
 =======
 >>>>>>> parent of afc0656... update login
+=======
+>>>>>>> parent of afc0656... update login
                                         <a href=""/konsumens"">
                                             <span class=""sub-item"">Konsumen</span>
                                         </a>
                                     </li>
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> f65659c69753d9ccb46fb78d7b64b52a63d078c6
 
@@ -957,10 +1077,16 @@ using Microsoft.AspNetCore.Http;
                 WriteLiteral(@"
 =======
 
+=======
+
+>>>>>>> parent of afc0656... update login
                                 </ul>
                             </div>
   ");
                 WriteLiteral(@"                      </li>
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
 
                     </ul>
@@ -976,8 +1102,13 @@ using Microsoft.AspNetCore.Http;
                     ");
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23229, 12, false);
 #line 411 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
+=======
+                BeginContext(20143, 12, false);
+#line 352 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20143, 12, false);
 #line 352 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
@@ -988,11 +1119,19 @@ using Microsoft.AspNetCore.Http;
 #line hidden
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23241, 118, true);
                 WriteLiteral("\r\n\r\n\r\n                </div>\r\n            </div>\r\n\r\n        </div>\r\n\r\n    </div>\r\n    <!--   Core JS Files   -->\r\n    ");
                 EndContext();
                 BeginContext(23359, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3767e6a246ef45afaaf31d079eebc200", async() => {
+=======
+                BeginContext(20155, 118, true);
+                WriteLiteral("\r\n\r\n\r\n                </div>\r\n            </div>\r\n\r\n        </div>\r\n\r\n    </div>\r\n    <!--   Core JS Files   -->\r\n    ");
+                EndContext();
+                BeginContext(20273, 48, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "457a6f5ed3bf4e6cb96bf3cc4750bd2d", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20155, 118, true);
                 WriteLiteral("\r\n\r\n\r\n                </div>\r\n            </div>\r\n\r\n        </div>\r\n\r\n    </div>\r\n    <!--   Core JS Files   -->\r\n    ");
@@ -1014,11 +1153,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23407, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(23413, 42, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "773f9c7f443e455fb4ac05bcc5115245", async() => {
+=======
+                BeginContext(20321, 6, true);
+                WriteLiteral("\r\n    ");
+                EndContext();
+                BeginContext(20327, 42, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b274a7c33e194e8a94de7093bff7714c", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20321, 6, true);
                 WriteLiteral("\r\n    ");
@@ -1040,17 +1187,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23455, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(23461, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2947837601d947db8ef250e45461b11a", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(20369, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(20375, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3b41a423b7a40d3a0dc08c1974253f1", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1066,17 +1219,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23506, 32, true);
                 WriteLiteral("\r\n\r\n    <!-- jQuery UI -->\r\n    ");
                 EndContext();
                 BeginContext(23538, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1f241df5cef455e84e708e58039020b", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(20420, 32, true);
                 WriteLiteral("\r\n\r\n    <!-- jQuery UI -->\r\n    ");
                 EndContext();
                 BeginContext(20452, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f8beab3fe3f4e079f2321bc26b3a785", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1092,17 +1251,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23583, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(23589, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "15ea4f61c9a04ac2965c2a0c2ad0e612", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(20497, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(20503, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e88591040a243f0937d2aaacad37537", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1118,17 +1283,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23646, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- jQuery Scrollbar -->\r\n    ");
                 EndContext();
                 BeginContext(23685, 52, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5c09730ffb874a169ad75e7905dab76a", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(20560, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- jQuery Scrollbar -->\r\n    ");
                 EndContext();
                 BeginContext(20599, 52, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77cce2aea04244f5b847bbf5d26c982d", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1144,11 +1315,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23737, 31, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart JS -->\r\n    ");
                 EndContext();
                 BeginContext(23768, 41, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6927bc277775407c98940853cc2c623f", async() => {
+=======
+                BeginContext(20651, 31, true);
+                WriteLiteral("\r\n\r\n    <!-- Chart JS -->\r\n    ");
+                EndContext();
+                BeginContext(20682, 41, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47aff97db49b4dbd9d2e16ae3bdde624", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20651, 31, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart JS -->\r\n    ");
@@ -1170,17 +1349,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23809, 35, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart Circle -->\r\n    ");
                 EndContext();
                 BeginContext(23844, 43, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f9348c5743f149439f9d0193e2b86933", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(20723, 35, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart Circle -->\r\n    ");
                 EndContext();
                 BeginContext(20758, 43, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43f7a52645a24a8193a11cf39b1e83ce", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1196,11 +1381,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23887, 33, true);
                 WriteLiteral("\r\n\r\n    <!-- Datatables -->\r\n    ");
                 EndContext();
                 BeginContext(23920, 46, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c0053cb4c4d6443c838841e06dbb4c2c", async() => {
+=======
+                BeginContext(20801, 33, true);
+                WriteLiteral("\r\n\r\n    <!-- Datatables -->\r\n    ");
+                EndContext();
+                BeginContext(20834, 46, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d160bf68a72e46919244d0f7cfef1f12", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20801, 33, true);
                 WriteLiteral("\r\n\r\n    <!-- Datatables -->\r\n    ");
@@ -1222,11 +1415,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(23966, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- Bootstrap Notify -->\r\n    ");
                 EndContext();
                 BeginContext(24005, 52, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a9ed698ca294703b570f54bc647f63d", async() => {
+=======
+                BeginContext(20880, 39, true);
+                WriteLiteral("\r\n\r\n    <!-- Bootstrap Notify -->\r\n    ");
+                EndContext();
+                BeginContext(20919, 52, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "519364f926fd430d81207eb1feb85db6", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20880, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- Bootstrap Notify -->\r\n    ");
@@ -1248,11 +1449,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24057, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- Bootstrap Toggle -->\r\n    ");
                 EndContext();
                 BeginContext(24096, 52, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2e2c6ff2687044b0b533185bc480df6b", async() => {
+=======
+                BeginContext(20971, 39, true);
+                WriteLiteral("\r\n\r\n    <!-- Bootstrap Toggle -->\r\n    ");
+                EndContext();
+                BeginContext(21010, 52, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ae8bb0d88fe54e5fa444c92d3ec3745f", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(20971, 39, true);
                 WriteLiteral("\r\n\r\n    <!-- Bootstrap Toggle -->\r\n    ");
@@ -1274,17 +1483,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24148, 34, true);
                 WriteLiteral("\r\n\r\n    <!-- Sweet Alert -->\r\n    ");
                 EndContext();
                 BeginContext(24182, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9928d5064cbd4e8e80eb8c3b03578840", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(21062, 34, true);
                 WriteLiteral("\r\n\r\n    <!-- Sweet Alert -->\r\n    ");
                 EndContext();
                 BeginContext(21096, 45, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afba80ba7e334fbaa9cb252b8aa13656", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1300,17 +1515,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24227, 36, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart amChart -->\r\n    ");
                 EndContext();
                 BeginContext(24263, 46, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0ed13fccf0c74dafa17ecd00af2b1530", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(21141, 36, true);
                 WriteLiteral("\r\n\r\n    <!-- Chart amChart -->\r\n    ");
                 EndContext();
                 BeginContext(21177, 46, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2933b98b0084450ea2c1b4108e88b881", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1326,17 +1547,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24309, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(24315, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1788bf849fa454fa7ae48d8742dc885", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(21223, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(21229, 48, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da2874298c9a48cbbfc35befcc862b3d", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1352,17 +1579,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24363, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(24369, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "535b02ff582e44c3ba8693adb1a1cfca", async() => {
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(21277, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(21283, 57, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0edc039278d94fac82c36e50dec55d34", async() => {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
                 }
                 );
@@ -1378,11 +1611,19 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24426, 32, true);
                 WriteLiteral("\r\n\r\n    <!-- Azzara JS -->\r\n    ");
                 EndContext();
                 BeginContext(24458, 41, false);
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fa008cbb540c4a1d88dadc90b3e6f7a2", async() => {
+=======
+                BeginContext(21340, 32, true);
+                WriteLiteral("\r\n\r\n    <!-- Azzara JS -->\r\n    ");
+                EndContext();
+                BeginContext(21372, 41, false);
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a3cf0071a10c444aab44ed7d174e9408", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(21340, 32, true);
                 WriteLiteral("\r\n\r\n    <!-- Azzara JS -->\r\n    ");
@@ -1404,17 +1645,23 @@ using Microsoft.AspNetCore.Http;
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24499, 8, true);
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();
                 BeginContext(24508, 41, false);
 #line 458 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
 =======
+=======
+>>>>>>> parent of afc0656... update login
                 BeginContext(21413, 8, true);
                 WriteLiteral("\r\n\r\n    ");
                 EndContext();
                 BeginContext(21422, 41, false);
 #line 399 "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Layout\_Layout.cshtml"
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
 Write(RenderSection("Scripts", required: false));
 
@@ -1422,7 +1669,11 @@ Write(RenderSection("Scripts", required: false));
 #line hidden
                 EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 BeginContext(24549, 2, true);
+=======
+                BeginContext(21463, 2, true);
+>>>>>>> parent of afc0656... update login
 =======
                 BeginContext(21463, 2, true);
 >>>>>>> parent of afc0656... update login
@@ -1441,7 +1692,11 @@ Write(RenderSection("Scripts", required: false));
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             EndContext();
 <<<<<<< HEAD
+<<<<<<< HEAD
             BeginContext(24558, 9, true);
+=======
+            BeginContext(21472, 9, true);
+>>>>>>> parent of afc0656... update login
 =======
             BeginContext(21472, 9, true);
 >>>>>>> parent of afc0656... update login

@@ -76,7 +76,11 @@ using Client.Models;
             EndContext();
             BeginContext(484, 71, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6b08e2203cc64a0b8d9b4f324d75bdb7", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "398f4051782a47638e3ffad58974cddc", async() => {
+>>>>>>> parent of afc0656... update login
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "398f4051782a47638e3ffad58974cddc", async() => {
 >>>>>>> parent of afc0656... update login
@@ -111,7 +115,11 @@ using Client.Models;
             EndContext();
             BeginContext(987, 77, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "01d97146a4924a9182a4d02f64986e67", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0cd36d62d05f4a419f93da9f7b97ec69", async() => {
+>>>>>>> parent of afc0656... update login
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0cd36d62d05f4a419f93da9f7b97ec69", async() => {
 >>>>>>> parent of afc0656... update login
@@ -146,7 +154,11 @@ using Client.Models;
             EndContext();
             BeginContext(1520, 79, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "975be2ac726e4ac6900cf8bc2251936d", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c8845d60ea0a42fdb4b24d6670f9020d", async() => {
+>>>>>>> parent of afc0656... update login
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "c8845d60ea0a42fdb4b24d6670f9020d", async() => {
 >>>>>>> parent of afc0656... update login

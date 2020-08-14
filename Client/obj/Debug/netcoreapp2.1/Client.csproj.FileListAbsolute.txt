@@ -88,6 +88,7 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.pdb
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.genruntimeconfig.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 D:/MII/MCCOC/#7-Templating/tugas/CoreFEDesign/Client/bin/Debug/netcoreapp2.1/appsettings.Development.json
 D:/MII/MCCOC/#7-Templating/tugas/CoreFEDesign/Client/bin/Debug/netcoreapp2.1/appsettings.json
@@ -228,6 +229,9 @@ D:/MII/MCCOC/#9-Last_Project/CoreFEDesign/Client/obj/Debug/netcoreapp2.1/Razor/V
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/Client/obj/Debug/netcoreapp2.1/Client.pdb
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/Client/obj/Debug/netcoreapp2.1/Client.genruntimeconfig.cache
 >>>>>>> f65659c69753d9ccb46fb78d7b64b52a63d078c6
+=======
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
+>>>>>>> parent of afc0656... update login
 =======
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
 >>>>>>> parent of afc0656... update login

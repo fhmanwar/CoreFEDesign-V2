@@ -198,7 +198,11 @@ using Client.Models;
                 EndContext();
                 BeginContext(6381, 50, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8818a88bf1c44a7a13f75b554fe84a4", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbf0d55b09374ff995ec973b6766fa79", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbf0d55b09374ff995ec973b6766fa79", async() => {
 >>>>>>> parent of afc0656... update login

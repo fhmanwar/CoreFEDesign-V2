@@ -129,7 +129,11 @@ using Client.Models;
             EndContext();
             BeginContext(2281, 3109, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8d1008c676142d3b2d14ba552a7cada", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f285cb11bc044bc94621be35041c475", async() => {
+>>>>>>> parent of afc0656... update login
 =======
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8f285cb11bc044bc94621be35041c475", async() => {
 >>>>>>> parent of afc0656... update login
@@ -170,7 +174,11 @@ using Client.Models;
                 EndContext();
                 BeginContext(4453, 39, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ba1d3cf15256417daff345d0c16e69fe", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b79f79d2ba6548408f909c77c394fe77", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b79f79d2ba6548408f909c77c394fe77", async() => {
 >>>>>>> parent of afc0656... update login
@@ -196,7 +204,11 @@ using Client.Models;
                 EndContext();
                 BeginContext(4546, 44, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "98155edc354345ea8c896818e5ef8e0a", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cbdf135773948fd9cf98a3730d71eeb", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cbdf135773948fd9cf98a3730d71eeb", async() => {
 >>>>>>> parent of afc0656... update login
@@ -222,7 +234,11 @@ using Client.Models;
                 EndContext();
                 BeginContext(4644, 38, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72db06677f904c5dbba523478fb7f806", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "077530eab14b4cdeb029f326af29d0f9", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "077530eab14b4cdeb029f326af29d0f9", async() => {
 >>>>>>> parent of afc0656... update login
@@ -317,7 +333,11 @@ using Client.Models;
                 EndContext();
                 BeginContext(6881, 49, false);
 <<<<<<< HEAD
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f45d376f7efa4b2a9f30b0a55421c792", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7556232762e4d56a841aa119c1a88f1", async() => {
+>>>>>>> parent of afc0656... update login
 =======
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7556232762e4d56a841aa119c1a88f1", async() => {
 >>>>>>> parent of afc0656... update login

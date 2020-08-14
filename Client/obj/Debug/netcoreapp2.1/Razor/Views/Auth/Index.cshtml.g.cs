@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Auth\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "2dd75e0a6930175e9911b7c3afdc830bf30025ff"
+=======
+#pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Auth\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "ad295c50b87cb00cf6eb9667f0dbadaa252ad18c"
+>>>>>>> parent of afc0656... update login
 =======
 #pragma checksum "D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\Views\Auth\Index.cshtml" "{ff1816ec-aa5e-4d10-87f7-6f4963833460}" "ad295c50b87cb00cf6eb9667f0dbadaa252ad18c"
 >>>>>>> parent of afc0656... update login
@@ -28,6 +32,7 @@ using Client.Models;
 #line default
 #line hidden
 <<<<<<< HEAD
+<<<<<<< HEAD
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2dd75e0a6930175e9911b7c3afdc830bf30025ff", @"/Views/Auth/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3332004e6f18ccbec22253d7e177fe1fd5f40969", @"/Views/_ViewImports.cshtml")]
     public class Views_Auth_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
@@ -55,10 +60,15 @@ using Client.Models;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
 =======
+=======
+>>>>>>> parent of afc0656... update login
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ad295c50b87cb00cf6eb9667f0dbadaa252ad18c", @"/Views/Auth/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3332004e6f18ccbec22253d7e177fe1fd5f40969", @"/Views/_ViewImports.cshtml")]
     public class Views_Auth_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+<<<<<<< HEAD
+>>>>>>> parent of afc0656... update login
+=======
 >>>>>>> parent of afc0656... update login
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
@@ -73,6 +83,7 @@ using Client.Models;
 
 #line default
 #line hidden
+<<<<<<< HEAD
 <<<<<<< HEAD
             BeginContext(90, 56, true);
             WriteLiteral("\r\n<div class=\"page-header\">\r\n    <h4 class=\"page-title\">");
@@ -245,6 +256,10 @@ using Client.Models;
             );
             BeginContext(5561, 2, true);
             WriteLiteral("\r\n");
+=======
+            BeginContext(90, 20, true);
+            WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n");
+>>>>>>> parent of afc0656... update login
 =======
             BeginContext(90, 20, true);
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n");

@@ -33,6 +33,7 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.dll
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.pdb
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.genruntimeconfig.cache
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csprojAssemblyReference.cache
 =======
 D:/MII/MCCOC/#7-Templating/tugas/CoreFEDesign/API/bin/Debug/netcoreapp2.1/appsettings.Development.json
@@ -92,6 +93,11 @@ D:/MII/MCCOC/#9-Last_Project/CoreFEDesign/API/obj/Debug/netcoreapp2.1/UserSecret
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/API/obj/Debug/netcoreapp2.1/API.genruntimeconfig.cache
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/API/obj/Debug/netcoreapp2.1/API.csprojAssemblyReference.cache
 >>>>>>> f65659c69753d9ccb46fb78d7b64b52a63d078c6
+=======
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
+>>>>>>> parent of afc0656... update login
 =======
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
