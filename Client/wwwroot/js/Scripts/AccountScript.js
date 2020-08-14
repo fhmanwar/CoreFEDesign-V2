@@ -1,5 +1,4 @@
 ﻿var table = null;
-var arrMerk = [];
 
 $(document).ready(function () {
     $(function () {
@@ -11,39 +10,35 @@ $(document).ready(function () {
         "processing": true,
         "responsive": true,
         "pagination": true,
+        "stateSave": true,
         "ajax": {
-            url: "/cars/LoadCar",
+            url: "/accounts/loadAccount",
             type: "GET",
             dataType: "json",
             dataSrc: "",
         },
         "columns": [
             {
-                "data": "id",
+                "data": "id_acc",
                 render: function (data, type, row, meta) {
                     return meta.row + meta.settings._iDisplayStart + 1;
-                    //return meta.row + 1;
                 }
             },
             {
                 "render": function (data, type, row) {
-                    return row.nm_car + '<br/><small>'+ row.merkName +'</small>'
+                    return row.name + '<br/><small>' + row.uname + '</small>'
                 }
             },
-            { "data": "year" },
-            { "data": "transmition" },
-            {
-                "data": "price",
-                'render': $.fn.dataTable.render.number(',', '.', 2, 'Rp '),
-            },
+            { "data": "mail" },
+            { "data": "access" },
             {
                 "sortable": false,
                 "render": function (data, type, row) {
                     //console.log(row);
                     $('[data-toggle="tooltip"]').tooltip();
-                    return '<button class="btn btn-link btn-md btn-warning " data-placement="left" data-toggle="tooltip" data-animation="false" title="Edit" onclick="return GetById(' + row.id_car + ')" ><i class="fa fa-lg fa-edit"></i></button>'
+                    return '<button class="btn btn-link btn-md btn-warning " data-placement="left" data-toggle="tooltip" data-animation="false" title="Edit" onclick="return GetById(' + row.id_acc + ')" ><i class="fa fa-lg fa-edit"></i></button>'
                         + '&nbsp;'
-                        + '<button class="btn btn-link btn-md btn-danger" data-placement="right" data-toggle="tooltip" data-animation="false" title="Delete" onclick="return Delete(' + row.id_car + ')" ><i class="fa fa-lg fa-times"></i></button>'
+                        + '<button class="btn btn-link btn-md btn-danger" data-placement="right" data-toggle="tooltip" data-animation="false" title="Delete" onclick="return Delete(' + row.id_acc + ')" ><i class="fa fa-lg fa-times"></i></button>'
                 }
             }
         ]
@@ -53,54 +48,31 @@ $(document).ready(function () {
 function ClearScreen() {
     $('#Id').val('');
     $('#Name').val('');
-    $('#Year').val('');
-    $('#Transmisi').val('');
-    $('#Price').val('');
+    $('#Uname').val('');
+    $('#Email').val('');
+    $('#Pass').val('');
+    $('#Addr').val('');
+    $('#Phone').val('');
+    $('#Access').val('');
     $('#update').hide();
     $('#add').show();
 }
 
-function LoadMerk(element) {
-    //debugger;
-    if (arrMerk.length === 0) {
-        $.ajax({
-            type: "Get",
-            url: "/merks/LoadMerk",
-            success: function (data) {
-                arrMerk = data;
-                renderMerk(element);
-            }
-        });
-    }
-    else {
-        renderMerk(element);
-    }
-}
-
-function renderMerk(element) {
-    var $option = $(element);
-    $option.empty();
-    $option.append($('<option/>').val('0').text('Select Merk').hide());
-    $.each(arrMerk, function (i, val) {
-        $option.append($('<option/>').val(val.id_merk).text(val.merk))
-    });
-}
-
-LoadMerk($('#MerkOption'))
-
 function GetById(id) {
     //debugger;
     $.ajax({
-        url: "/cars/GetById/",
+        url: "/accounts/GetById/",
         data: { id: id }
     }).then((result) => {
         //debugger;
-        $('#Id').val(result.id_car);
-        $('#Name').val(result.nm_car);
-        $('#Year').val(result.year);
-        $('#Transmisi').val(result.transmition);
-        $('#Price').val(result.price);
-        $('#MerkOption').val(result.merkID);
+        $('#Id').val(result.id_acc);
+        $('#Name').val(result.name);
+        $('#Uname').val(result.uname);
+        $('#Email').val(result.mail);
+        $('#Pass').val('');
+        $('#Access').val(result.access);
+        $('#Addr').val(result.addr);
+        $('#Phone').val(result.phone);
         $('#add').hide();
         $('#update').show();
         $('#myModal').modal('show');
@@ -109,18 +81,20 @@ function GetById(id) {
 
 function Save() {
     //debugger;
-    var Car = new Object();
-    Car.nm_car = $('#Name').val();
-    Car.transmition = $('#Transmisi').val();
-    Car.year = $('#Year').val();
-    Car.price = $('#Price').val();
-    Car.merkID = $('#MerkOption').val();
+    var account = new Object();
+    account.name = $('#Name').val();
+    account.uname = $('#Uname').val();
+    account.mail = $('#Email').val();
+    account.pass = $('#Pass').val();
+    account.access = $('#Access').val();
+    account.addr = $('#Addr').val();
+    account.phone = $('#Phone').val();
     $.ajax({
         type: 'POST',
-        url: "/cars/InsertOrUpdate/",
+        url: "/accounts/InsertOrUpdate/",
         cache: false,
         dataType: "JSON",
-        data: Car
+        data: account
     }).then((result) => {
         //debugger;
         if (result.statusCode == 200) {
@@ -140,19 +114,24 @@ function Save() {
 }
 
 function Update() {
-    var Car = new Object();
-    Car.id_car = $('#Id').val();
-    Car.nm_car = $('#Name').val();
-    Car.transmition = $('#Transmisi').val();
-    Car.year = $('#Year').val();
-    Car.price = $('#Price').val();
-    Car.merkID = $('#MerkOption').val();
+    //debugger;
+    var account = new Object();
+    account.id_acc = $('#Id').val();
+    account.name = $('#Name').val();
+    account.uname = $('#Uname').val();
+    account.mail = $('#Email').val();
+    if ($('#Pass').val() != null) {
+        account.pass = $('#Pass').val();
+    }
+    account.access = $('#Access').val();
+    account.addr = $('#Addr').val();
+    account.phone = $('#Phone').val();
     $.ajax({
         type: 'POST',
-        url: "/cars/InsertOrUpdate/",
+        url: "/accounts/InsertOrUpdate/",
         cache: false,
         dataType: "JSON",
-        data: Car
+        data: account
     }).then((result) => {
         //debugger;
         if (result.statusCode == 200) {
@@ -172,7 +151,6 @@ function Update() {
 }
 
 function Delete(id) {
-    //debugger;
     Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
@@ -184,7 +162,7 @@ function Delete(id) {
         if (result.value) {
             //debugger;
             $.ajax({
-                url: "/cars/Delete/",
+                url: "/accounts/Delete/",
                 data: { id: id }
             }).then((result) => {
                 //debugger;

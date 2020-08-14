@@ -7,11 +7,13 @@ namespace API.ViewModels
 {
     public class AccountVM
     {
-        public int id_account { get; set; }
+        public int id_acc { get; set; }
         public string name { get; set; }
-        public string username { get; set; }
-        public string email { get; set; }
-        public string password { get; set; }
-        public string access_level { get; set; }
+        public string Uname { get; set; }
+        public string mail { get; set; }
+        public string pass { get; set; }
+        public string access { get; set; }
+        public string addr { get; set; }
+        public string phone { get; set; }
     }
 }
