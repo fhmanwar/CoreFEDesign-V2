@@ -34,4 +34,3 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.RazorT
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.dll
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.pdb
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.genruntimeconfig.cache
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csprojAssemblyReference.cache
