@@ -31,7 +31,7 @@ namespace API.Repository
                 parameters.Add("tot", reserveVM.total);
                 parameters.Add("tgl_bayar", reserveVM.tgl_bayar);
                 parameters.Add("carID", reserveVM.carID);
-                parameters.Add("konsumenID", reserveVM.accountID);
+                parameters.Add("accountID", reserveVM.accountID);
                 var insert = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return insert;
             }
@@ -81,7 +81,7 @@ namespace API.Repository
                 parameters.Add("tot", reserveVM.total);
                 parameters.Add("tgl_bayar", reserveVM.tgl_bayar);
                 parameters.Add("carID", reserveVM.carID);
-                parameters.Add("konsumenID", reserveVM.accountID);
+                parameters.Add("accountID", reserveVM.accountID);
                 var Edit = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Edit;
             }

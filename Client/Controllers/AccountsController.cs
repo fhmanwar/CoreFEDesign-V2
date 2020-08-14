@@ -14,11 +14,12 @@ namespace Client.Controllers
     {
         readonly HttpClient client = new HttpClient
         {
-            BaseAddress = new Uri("https://localhost:44339/api/")
+            //BaseAddress = new Uri("https://localhost:44339/api/")
+            BaseAddress = new Uri("https://localhost:5000/api/")
         };
         public IActionResult Index()
         {
-            return View();
+            return View("~/Views/Auth/Index.cshtml");
         }
         public JsonResult LoadAccount()
         {
