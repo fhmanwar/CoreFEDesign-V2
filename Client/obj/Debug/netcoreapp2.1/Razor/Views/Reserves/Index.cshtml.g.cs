@@ -128,7 +128,11 @@ using Client.Models;
             WriteLiteral("                 <div class=\"modal-body\">\r\n                                ");
             EndContext();
             BeginContext(2289, 4224, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e71e28a671e24d13809a73f92863e8f7", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd5412ae4a19467cbdf1df7122c80dce", async() => {
+>>>>>>> parent of afc0656... update login
                 BeginContext(2295, 3755, true);
                 WriteLiteral(@"
 
@@ -190,7 +194,11 @@ using Client.Models;
                                                     ");
                 EndContext();
                 BeginContext(6050, 39, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "de8463e13b73462c8f17b29a0fdb2d04", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76de141f357b47fea0d7873cfd4da62e", async() => {
+>>>>>>> parent of afc0656... update login
                     BeginContext(6067, 13, true);
                     WriteLiteral("Select Status");
                     EndContext();
@@ -212,7 +220,11 @@ using Client.Models;
                 WriteLiteral("\r\n                                                    ");
                 EndContext();
                 BeginContext(6143, 36, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1313dd95ffd443d5b54d3b5c2e84567c", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f8cdb897f694faca026dbd3af40bc4f", async() => {
+>>>>>>> parent of afc0656... update login
                     BeginContext(6165, 5, true);
                     WriteLiteral("Sudah");
                     EndContext();
@@ -234,7 +246,11 @@ using Client.Models;
                 WriteLiteral("\r\n                                                    ");
                 EndContext();
                 BeginContext(6233, 36, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed41a28547d24e3da2f44ca1c0ae50e2", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a355954ffa3a47b790fce4ea2bcb1540", async() => {
+>>>>>>> parent of afc0656... update login
                     BeginContext(6255, 5, true);
                     WriteLiteral("Belum");
                     EndContext();
@@ -317,7 +333,11 @@ using Client.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(8147, 53, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6efc3dcb6354f95b987b63963903df6", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbf1abe6cded4127af4f08f4d2188093", async() => {
+>>>>>>> parent of afc0656... update login
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

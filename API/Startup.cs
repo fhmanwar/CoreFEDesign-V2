@@ -33,12 +33,10 @@ namespace API
             //services.AddDbContext<MyContext>(options => options.UseSqlServer(Configuration.GetConnectionString("myConn")));
             services.AddDbContext<MyContext>(options => options.UseMySQL(Configuration.GetConnectionString("myConn")));
             services.AddScoped<IMerk, MerkRepo>();
-            services.AddScoped<IAccount, AccountRepo>();
             services.AddScoped<IKonsumen, KonsumenRepo>();
             services.AddScoped<ICar, CarRepo>();
             services.AddScoped<IReserve, ReserveRepo>();
             services.AddScoped<ChartRepo>();
-            services.AddScoped<AuthRepo>();
 
         }
 

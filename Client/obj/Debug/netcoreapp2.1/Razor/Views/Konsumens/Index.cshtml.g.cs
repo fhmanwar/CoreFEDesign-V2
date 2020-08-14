@@ -124,7 +124,11 @@ using Client.Models;
             WriteLiteral("                  <div class=\"modal-body\">\r\n                                ");
             EndContext();
             BeginContext(2291, 1912, false);
+<<<<<<< HEAD
             __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86a222d473214abfab2c17fdb9cdaae6", async() => {
+=======
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "121c20b1feca484b9883a4af0ae3c25f", async() => {
+>>>>>>> parent of afc0656... update login
                 BeginContext(2297, 1899, true);
                 WriteLiteral(@"
                                     <div class=""row"">
@@ -212,7 +216,11 @@ using Client.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(5506, 54, false);
+<<<<<<< HEAD
                 __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2a3d0d43dfd045a083a492132d83014b", async() => {
+=======
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b5380e59981949e8869e1050bb22984a", async() => {
+>>>>>>> parent of afc0656... update login
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

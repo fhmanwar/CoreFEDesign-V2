@@ -4,13 +4,13 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using API.ViewModels;
+using API.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
 namespace Client.Controllers
 {
-    public class AccountsController : Controller
+    public class AccountController : Controller
     {
         readonly HttpClient client = new HttpClient
         {
@@ -21,22 +21,22 @@ namespace Client.Controllers
         {
             return View("~/Views/Auth/Index.cshtml");
         }
-        public JsonResult LoadAccount()
+        public JsonResult LoadKonsumen()
         {
-            IEnumerable<AccountVM> accounts = null;
+            IEnumerable<Account> accounts = null;
             var resTask = client.GetAsync("accounts");
             resTask.Wait();
 
             var result = resTask.Result;
             if (result.IsSuccessStatusCode)
             {
-                var readTask = result.Content.ReadAsAsync<List<AccountVM>>();
+                var readTask = result.Content.ReadAsAsync<List<Account>>();
                 readTask.Wait();
                 accounts = readTask.Result;
             }
             else
             {
-                accounts = Enumerable.Empty<AccountVM>();
+                accounts = Enumerable.Empty<Account>();
                 ModelState.AddModelError(string.Empty, "Server Error try after sometimes.");
             }
             return Json(accounts);
@@ -45,7 +45,7 @@ namespace Client.Controllers
 
         public JsonResult GetById(int Id)
         {
-            AccountVM accounts = null;
+            Account accounts = null;
             var resTask = client.GetAsync("accounts/" + Id);
             resTask.Wait();
 
@@ -53,7 +53,7 @@ namespace Client.Controllers
             if (result.IsSuccessStatusCode)
             {
                 var json = JsonConvert.DeserializeObject(result.Content.ReadAsStringAsync().Result).ToString();
-                accounts = JsonConvert.DeserializeObject<AccountVM>(json);
+                accounts = JsonConvert.DeserializeObject<Account>(json);
             }
             else
             {
@@ -62,7 +62,7 @@ namespace Client.Controllers
             return Json(accounts);
         }
 
-        public JsonResult InsertOrUpdate(AccountVM accounts, int id_acc)
+        public JsonResult InsertOrUpdate(Account accounts, int id_account)
         {
             try
             {
@@ -71,14 +71,14 @@ namespace Client.Controllers
                 var byteContent = new ByteArrayContent(buffer);
                 byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
-                if (accounts.id_acc == 0)
+                if (accounts.id_account == 0)
                 {
                     var result = client.PostAsync("accounts", byteContent).Result;
                     return Json(result);
                 }
-                else if (accounts.id_acc == id_acc)
+                else if (accounts.id_account == id_account)
                 {
-                    var result = client.PutAsync("accounts/" + id_acc, byteContent).Result;
+                    var result = client.PutAsync("accounts/" + id_account, byteContent).Result;
                     return Json(result);
                 }
 

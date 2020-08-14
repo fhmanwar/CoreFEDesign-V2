@@ -154,7 +154,7 @@ function Update() {
         dataType: "JSON",
         data: Car
     }).then((result) => {
-        //debugger;
+        debugger;
         if (result.statusCode == 200) {
             Swal.fire({
                 position: 'center',

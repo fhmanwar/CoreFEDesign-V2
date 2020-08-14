@@ -26,13 +26,11 @@ namespace API.Repository
             using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
                 var procName = "AccountSPInsert";
-                parameters.Add("name", accountVM.name);
-                parameters.Add("uname", accountVM.Uname);
-                parameters.Add("mail", accountVM.mail);
-                parameters.Add("pass", BC.HashPassword(accountVM.pass));
-                parameters.Add("access", accountVM.access);
-                parameters.Add("addr", accountVM.addr);
-                parameters.Add("phone", accountVM.phone);
+                parameters.Add("nama", accountVM.name);
+                parameters.Add("uname", accountVM.username);
+                parameters.Add("mail", accountVM.email);
+                parameters.Add("pass", BC.HashPassword(accountVM.password));
+                parameters.Add("lvl", accountVM.access_level);
                 var insert = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return insert;
             }
@@ -74,23 +72,13 @@ namespace API.Repository
         {
             using (MySqlConnection connection = new MySqlConnection(_configuration.GetConnectionString("myConn")))
             {
-                var account = getID(id);
                 var procName = "AccountSPEdit";
                 parameters.Add("id", id);
-                parameters.Add("name", accountVM.name);
-                parameters.Add("uname", accountVM.Uname);
-                parameters.Add("mail", accountVM.mail);
-                if (accountVM.pass != null)
-                {
-                    parameters.Add("pass", BC.HashPassword(accountVM.pass));
-                }
-                else
-                {
-                    parameters.Add("pass", account.pass);
-                }
-                parameters.Add("access", accountVM.access);
-                parameters.Add("addr", accountVM.addr);
-                parameters.Add("phone", accountVM.phone);
+                parameters.Add("nama", accountVM.name);
+                parameters.Add("uname", accountVM.username);
+                parameters.Add("mail", accountVM.email);
+                parameters.Add("pass", BC.HashPassword(accountVM.password));
+                parameters.Add("lvl", accountVM.access_level);
                 var Edit = connection.Execute(procName, parameters, commandType: CommandType.StoredProcedure);
                 return Edit;
             }

@@ -1,16 +1,4 @@
-﻿@using Microsoft.AspNetCore.Http
-@{
-
-    var userId = Context.Session.GetString("uname");
-    var name = Context.Session.GetString("name");
-    var level = Context.Session.GetString("lvl");
-    if (userId == null)
-    {
-        Context.Response.Redirect("/login");
-
-    }
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -218,7 +206,7 @@
                                     <div class="user-box">
                                         <div class="avatar-lg"><img src="~/images/default.png" alt="image profile" class="avatar-img rounded"></div>
                                         <div class="u-text">
-                                            <h4>@name</h4>
+                                            <h4>Hizrian</h4>
                                             <p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                         </div>
                                     </div>
@@ -226,9 +214,12 @@
                                 <li>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">My Profile</a>
+                                    <a class="dropdown-item" href="#">My Balance</a>
+                                    <a class="dropdown-item" href="#">Inbox</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="#">Account Setting</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/logout">Logout</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
                                 </li>
                             </ul>
                         </li>
@@ -238,7 +229,7 @@
             </nav>
             <!-- End Navbar -->
         </div>
-                
+
         <!-- Sidebar -->
         <div class="sidebar">
             <div class="sidebar-background"></div>
@@ -251,8 +242,8 @@
                         <div class="info">
                             <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                                 <span>
-                                    @name
-                                    <span class="user-level">@level</span>
+                                    Hizrian
+                                    <span class="user-level">Administrator</span>
                                     <span class="caret"></span>
                                 </span>
                             </a>
@@ -260,9 +251,21 @@
 
                             <div class="collapse in" id="collapseExample">
                                 <ul class="nav">
-                                    <li><a href="#profile"><span class="link-collapse">My Profile</span></a></li>
-                                    <li><a href="#edit"><span class="link-collapse">Edit Profile</span></a></li>
-                                    <li><a href="#settings"><span class="link-collapse">Settings</span></a></li>
+                                    <li>
+                                        <a href="#profile">
+                                            <span class="link-collapse">My Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#edit">
+                                            <span class="link-collapse">Edit Profile</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#settings">
+                                            <span class="link-collapse">Settings</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -282,7 +285,10 @@
                             <h4 class="text-section">Components</h4>
                         </li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of afc0656... update login
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#car">
                                 <i class="fas fa-fw fa-car-side"></i>
@@ -323,80 +329,36 @@
                         <li class="nav-item">
                             <a data-toggle="collapse" href="#users">
                                 <i class="fas fa-fw fa-users-cog"></i>
+<<<<<<< HEAD
                                 <p>Account</p>
+=======
+                                <p>Konsumen</p>
+>>>>>>> parent of afc0656... update login
                                 <span class="caret"></span>
                             </a>
                             <div class="collapse" id="users">
                                 <ul class="nav nav-collapse">
                                     <li>
+<<<<<<< HEAD
                                         <a href="/accounts">
                                             <span class="sub-item">All Account</span>
                                         </a>
                                     </li>
                                     <li>
+=======
+>>>>>>> parent of afc0656... update login
                                         <a href="/konsumens">
                                             <span class="sub-item">Konsumen</span>
                                         </a>
                                     </li>
+<<<<<<< HEAD
 >>>>>>> f65659c69753d9ccb46fb78d7b64b52a63d078c6
+=======
+>>>>>>> parent of afc0656... update login
 
-                        @if (level == "User")
-                        {
-                            <li class="nav-item">
-                                <a data-toggle="collapse" href="#reserve">
-                                    <i class="far fa-chart-bar"></i>
-                                    <p>Reservasi</p>
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="collapse" id="reserve">
-                                    <ul class="nav nav-collapse">
-                                        <li><a href="/reserves"><span class="sub-item">Reserve</span></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        }
-                        else
-                        {
-                            <li class="nav-item">
-                                <a data-toggle="collapse" href="#car">
-                                    <i class="fas fa-fw fa-car-side"></i>
-                                    <p>Car</p>
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="collapse" id="car">
-                                    <ul class="nav nav-collapse">
-                                        <li><a href="/merks"><span class="sub-item">Data Merk</span></a></li>
-                                        <li><a href="/cars"><span class="sub-item">Data Mobil</span></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a data-toggle="collapse" href="#reserve">
-                                    <i class="far fa-chart-bar"></i>
-                                    <p>Reservasi</p>
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="collapse" id="reserve">
-                                    <ul class="nav nav-collapse">
-                                        <li><a href="/reserves"><span class="sub-item">Reserve</span></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a data-toggle="collapse" href="#users">
-                                    <i class="fas fa-fw fa-users-cog"></i>
-                                    <p>Accounts</p>
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="collapse" id="users">
-                                    <ul class="nav nav-collapse">
-                                        <li><a href="/accounts"><span class="sub-item">All Accounts</span></a></li>
-                                        <li><a href="/konsumens"><span class="sub-item">Konsumen</span></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        }
-
+                                </ul>
+                            </div>
+                        </li>
 
                     </ul>
                 </div>

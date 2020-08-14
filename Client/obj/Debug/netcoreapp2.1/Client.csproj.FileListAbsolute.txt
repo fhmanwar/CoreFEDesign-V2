@@ -46,7 +46,6 @@ D:\MII\MCCOC\#7-Templating\tugas\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\API
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\appsettings.Development.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\appsettings.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Client.deps.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Client.runtimeconfig.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Client.runtimeconfig.dev.json
@@ -65,10 +64,6 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.TagHelpers.input.cache
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.TagHelpers.output.cache
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.RazorCoreGenerate.cache
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Index.cshtml.g.cs
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Login.cshtml.g.cs
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\NotFound.cshtml.g.cs
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Accounts\Register.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Cars\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Home1\About.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Home1\Contact.cshtml.g.cs
@@ -77,7 +72,6 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\V
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Konsumens\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Layout\_Layout.cshtml.g.cs
-D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Layout\_LayoutHandler.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Merks\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Reserves\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
@@ -93,6 +87,7 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.dll
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.pdb
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Client.genruntimeconfig.cache
+<<<<<<< HEAD
 =======
 D:/MII/MCCOC/#7-Templating/tugas/CoreFEDesign/Client/bin/Debug/netcoreapp2.1/appsettings.Development.json
 D:/MII/MCCOC/#7-Templating/tugas/CoreFEDesign/Client/bin/Debug/netcoreapp2.1/appsettings.json
@@ -233,5 +228,8 @@ D:/MII/MCCOC/#9-Last_Project/CoreFEDesign/Client/obj/Debug/netcoreapp2.1/Razor/V
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/Client/obj/Debug/netcoreapp2.1/Client.pdb
 /Users/iboy/Documents/Apps/ASP/CoreFEDesign-V2/Client/obj/Debug/netcoreapp2.1/Client.genruntimeconfig.cache
 >>>>>>> f65659c69753d9ccb46fb78d7b64b52a63d078c6
+=======
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\bin\Debug\netcoreapp2.1\Properties\serviceDependencies.local.json
+>>>>>>> parent of afc0656... update login
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Index.cshtml.g.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\Client\obj\Debug\netcoreapp2.1\Razor\Views\Auth\Login.cshtml.g.cs
