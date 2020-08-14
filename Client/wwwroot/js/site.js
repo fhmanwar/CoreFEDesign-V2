@@ -1,13 +1,4 @@
-﻿// Show Password
-function showPassword(button) {
-	var inputPassword = $(button).parent().find('input');
-	if (inputPassword.attr('type') === "password") {
-		inputPassword.attr('type', 'text');
-	} else {
-		inputPassword.attr('type', 'password');
-	}
-}
+﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+// for details on configuring this project to bundle and minify static web assets.
 
-$('.show-password').on('click', function () {
-	showPassword(this);
-})
+// Write your JavaScript code.
