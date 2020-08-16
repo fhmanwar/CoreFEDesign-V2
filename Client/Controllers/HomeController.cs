@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Client.Models;
 using System.Net.Http;
 using API.ViewModels;
+using Microsoft.AspNetCore.Http;
 
 namespace Client.Controllers
 {
@@ -18,7 +19,19 @@ namespace Client.Controllers
         };
         public IActionResult Index()
         {
-            return View();
+            var level = HttpContext.Session.GetString("lvl");
+            if (level == "Admin")
+            {
+                return View();
+            }
+            else if (level == "User")
+            {
+                return RedirectToAction("Index", "User");
+            }
+            else
+            {
+                return RedirectToAction("validate", "Auth");
+            }   
         }
 
         public JsonResult LoadPieChart()

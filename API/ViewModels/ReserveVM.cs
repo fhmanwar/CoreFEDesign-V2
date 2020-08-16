@@ -20,7 +20,9 @@ namespace API.ViewModels
         public String carMerk { get; set; }
         public int accountID { get; set; }
         public String accountName { get; set; }
-        public String accountAlamat { get; set; }
+        public String accountUname { get; set; }
+        public String accountLvl { get; set; }
+        public String accountAddr { get; set; }
         public String accountPhone { get; set; }
     }
 }

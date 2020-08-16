@@ -49,7 +49,7 @@ $(document).ready(function () {
         },
         "columns": [
             {
-                "data": "id",
+                "data": "id_reserve",
                 render: function (data, type, row, meta) {
                     return meta.row + meta.settings._iDisplayStart + 1;
                 }
@@ -92,7 +92,7 @@ $(document).ready(function () {
                     return row.carName + '<br/><small>' + row.carMerk + '</small>'
                 }
             },
-            { "data": "konsumenName" },
+            { "data": "accountName" },
             { "data": "status" },
             {
                 "sortable": false,
@@ -107,6 +107,7 @@ $(document).ready(function () {
         ]
     });
     ClearScreen();
+    console.log("");
 });
 
 function ClearScreen() {
@@ -155,7 +156,7 @@ function LoadKonsumen(element) {
     if (arrKonsumen.length === 0) {
         $.ajax({
             type: "Get",
-            url: "/konsumens/Loadkonsumen",
+            url: "/accounts/LoadAccount",
             success: function (data) {
                 arrKonsumen = data;
                 renderKonsumen(element);
@@ -171,7 +172,7 @@ function renderKonsumen(element) {
     $option.empty();
     $option.append($('<option/>').val('0').text('Select Konsumen').hide());
     $.each(arrKonsumen, function (i, val) {
-        $option.append($('<option/>').val(val.id_konsumen).text(val.nama))
+        $option.append($('<option/>').val(val.id_acc).text(val.name))
     });
 }
 
@@ -245,7 +246,7 @@ function Save() {
     Reserve.total = $('#Total').val();
     Reserve.tgl_bayar = "2000-01-01";
     Reserve.carID = $('#CarOption').val();
-    Reserve.konsumenID = $('#KonsumenOption').val();
+    Reserve.accountID = $('#KonsumenOption').val();
     $.ajax({
         type: 'POST',
         url: "/reserves/InsertOrUpdate/",
@@ -280,7 +281,7 @@ function Update() {
     Reserve.total = $('#Total').val();
     Reserve.tgl_bayar = $('#Bayar').val();
     Reserve.carID = $('#CarOption').val();
-    Reserve.konsumenID = $('#KonsumenOption').val();
+    Reserve.accountID = $('#KonsumenOption').val();
     $.ajax({
         type: 'POST',
         url: "/reserves/InsertOrUpdate/",

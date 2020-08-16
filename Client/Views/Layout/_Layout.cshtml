@@ -1,10 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Http
 @{
 
-    var userId = Context.Session.GetString("uname");
+    var userId = Context.Session.GetInt32("id");
+    var uname = Context.Session.GetString("uname");
     var name = Context.Session.GetString("name");
     var level = Context.Session.GetString("lvl");
-    if (userId == null)
+    if (uname == null)
     {
         Context.Response.Redirect("/login");
 
@@ -282,22 +283,7 @@
                             <h4 class="text-section">Components</h4>
                         </li>
 
-                        @if (level == "User")
-                        {
-                            <li class="nav-item">
-                                <a data-toggle="collapse" href="#reserve">
-                                    <i class="far fa-chart-bar"></i>
-                                    <p>Reservasi</p>
-                                    <span class="caret"></span>
-                                </a>
-                                <div class="collapse" id="reserve">
-                                    <ul class="nav nav-collapse">
-                                        <li><a href="/reserves"><span class="sub-item">Reserve</span></a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        }
-                        else
+                        @if (level == "Admin")
                         {
                             <li class="nav-item">
                                 <a data-toggle="collapse" href="#car">
@@ -334,6 +320,21 @@
                                     <ul class="nav nav-collapse">
                                         <li><a href="/accounts"><span class="sub-item">All Accounts</span></a></li>
                                         <li><a href="/konsumens"><span class="sub-item">Konsumen</span></a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a data-toggle="collapse" href="#reserve">
+                                    <i class="far fa-chart-bar"></i>
+                                    <p>Reservasi</p>
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="collapse" id="reserve">
+                                    <ul class="nav nav-collapse">
+                                        <li><a href="/reserves"><span class="sub-item">Reserve</span></a></li>
                                     </ul>
                                 </div>
                             </li>

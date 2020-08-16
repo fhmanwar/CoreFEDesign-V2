@@ -48,10 +48,18 @@ namespace Client.Controllers
                         var account = JsonConvert.DeserializeObject<AccountVM>(json);
                         if (BC.Verify(accountVM.pass, account.pass) && (account.access == "Admin" || account.access == "User"))
                         {
+                            HttpContext.Session.SetInt32("id", account.id_acc);
                             HttpContext.Session.SetString("uname", account.Uname);
                             HttpContext.Session.SetString("name", account.name);
                             HttpContext.Session.SetString("lvl", account.access);
-                            return Json(new { status = true, msg = "Login Successfully !" });
+                            if (account.access == "Admin")
+                            {
+                                return Json(new { status = true, msg = "Login Successfully !", acc = "admin" });
+                            }
+                            else
+                            {
+                                return Json(new { status = true, msg = "Login Successfully !", acc = "user" });
+                            }
                         }
                         else
                         {
@@ -65,17 +73,26 @@ namespace Client.Controllers
                 }
                 else
                 {
-                    return RedirectToAction("Notfound", "Auth");
+                    return RedirectToAction("Login", "Auth");
                 }
             }
-            else
+            else if (accountVM.name != null)
             {
                 var json = JsonConvert.SerializeObject(accountVM);
                 var buffer = System.Text.Encoding.UTF8.GetBytes(json);
                 var byteContent = new ByteArrayContent(buffer);
                 byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                var result = client.PostAsync("auths", byteContent).Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    return Json(new { status = true, code = result, msg = "Register Success! " });
+                }
+                else
+                {
+                    return Json(new { status = false, msg = "Something Wrong!" });
+                }
             }
-            return RedirectToAction("Login", "Auth");
+            return RedirectToAction("Notfound", "Auth");
         }
 
         [Route("logout")]

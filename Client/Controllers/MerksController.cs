@@ -6,6 +6,7 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using API.Models;
 using API.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -19,7 +20,19 @@ namespace Client.Controllers
         };
         public IActionResult Index()
         {
-            return View();
+            var level = HttpContext.Session.GetString("lvl");
+            if (level == "Admin")
+            {
+                return View();
+            }
+            else if (level == "User")
+            {
+                return RedirectToAction("Index", "User");
+            }
+            else
+            {
+                return RedirectToAction("NotFound", "Auth");
+            }
         }
 
         public JsonResult LoadMerk()
