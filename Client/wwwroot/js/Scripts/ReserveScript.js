@@ -225,7 +225,7 @@ function GetById(id) {
 
             })
         });
-        $('#KonsumenOption').val(result.konsumenID);
+        $('#KonsumenOption').val(result.accountID);
         $('#endCol').show();
         $('#totalCol').show();
         $('#carCol').show();
@@ -272,7 +272,7 @@ function Save() {
 }
 
 function Update() {
-    //debugger;
+    debugger;
     var Reserve = new Object();
     Reserve.id_reserve = $('#Id').val();
     Reserve.start_date = $('#Start').val();
@@ -289,7 +289,7 @@ function Update() {
         dataType: "JSON",
         data: Reserve
     }).then((result) => {
-        //debugger;
+        debugger;
         if (result.statusCode == 200) {
             Swal.fire({
                 position: 'center',
