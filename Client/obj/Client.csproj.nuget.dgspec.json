@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\Client.csproj": {}
+    "E:\\Work\\CoreFEDesign-V2\\Client\\Client.csproj": {}
   },
   "projects": {
-    "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj": {
+    "E:\\Work\\CoreFEDesign-V2\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
+        "projectUniqueName": "E:\\Work\\CoreFEDesign-V2\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\Kiboy\\.nuget\\packages\\",
-        "outputPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\obj\\",
+        "projectPath": "E:\\Work\\CoreFEDesign-V2\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Work\\CoreFEDesign-V2\\API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kiboy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,20 +90,17 @@
         }
       }
     },
-    "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\Client.csproj": {
+    "E:\\Work\\CoreFEDesign-V2\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\Client.csproj",
+        "projectUniqueName": "E:\\Work\\CoreFEDesign-V2\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\Client.csproj",
-        "packagesPath": "C:\\Users\\Kiboy\\.nuget\\packages\\",
-        "outputPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\Client\\obj\\",
+        "projectPath": "E:\\Work\\CoreFEDesign-V2\\Client\\Client.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "E:\\Work\\CoreFEDesign-V2\\Client\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Kiboy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -119,8 +113,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj": {
-                "projectPath": "D:\\MII\\MCCOC\\#9-Last_Project\\CoreFEDesign\\API\\API.csproj"
+              "E:\\Work\\CoreFEDesign-V2\\API\\API.csproj": {
+                "projectPath": "E:\\Work\\CoreFEDesign-V2\\API\\API.csproj"
               }
             }
           }
@@ -134,6 +128,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "EPPlus.Core": {
+              "target": "Package",
+              "version": "[1.5.4, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

@@ -41,7 +41,8 @@ namespace Client
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
+                app.UseStatusCodePagesWithRedirects("Error/{0}");
             }
             else
             {
