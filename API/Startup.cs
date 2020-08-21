@@ -39,6 +39,7 @@ namespace API
             services.AddScoped<IReserve, ReserveRepo>();
             services.AddScoped<ChartRepo>();
             services.AddScoped<AuthRepo>();
+            services.AddScoped<UserRepo>();
 
         }
 

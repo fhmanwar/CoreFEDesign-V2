@@ -51,6 +51,7 @@ $(document).ready(function () {
             {
                 "data": "id_reserve",
                 render: function (data, type, row, meta) {
+                    //return meta.row + meta.settings._iDisplayStart + 1;
                     return meta.row + meta.settings._iDisplayStart + 1;
                 }
             },

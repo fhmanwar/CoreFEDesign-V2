@@ -33,11 +33,11 @@ namespace Client.Controllers.User
             }
         }
 
-        public JsonResult LoadReserve()
+        public JsonResult LoadData()
         {
-            var userID = HttpContext.Session.GetString("id");
+            var userID = HttpContext.Session.GetInt32("id");
             IEnumerable<ReserveVM> reserveVM = null;
-            var resTask = client.GetAsync("reserves");
+            var resTask = client.GetAsync("users/" + userID);
             resTask.Wait();
 
             var result = resTask.Result;
@@ -55,10 +55,11 @@ namespace Client.Controllers.User
             return Json(reserveVM);
         }
 
-        public JsonResult GetById(int Id)
+        public JsonResult GetById()
         {
+            var id = HttpContext.Session.GetInt32("id");
             ReserveVM reserveVM = null;
-            var resTask = client.GetAsync("reserves/" + Id);
+            var resTask = client.GetAsync("users/" + id);
             resTask.Wait();
 
             var result = resTask.Result;

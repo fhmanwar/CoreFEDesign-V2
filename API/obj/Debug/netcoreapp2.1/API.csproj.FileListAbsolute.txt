@@ -24,6 +24,7 @@ D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\API.runtim
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\API.runtimeconfig.dev.json
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\API.dll
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\bin\Debug\netcoreapp2.1\API.pdb
+D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csprojAssemblyReference.cache
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.AssemblyInfoInputs.cache
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.AssemblyInfo.cs
 D:\MII\MCCOC\#9-Last_Project\CoreFEDesign\API\obj\Debug\netcoreapp2.1\API.csproj.CoreCompileInputs.cache
